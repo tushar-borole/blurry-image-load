@@ -1,0 +1,26 @@
+.blurry-load-container {
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.blurry-load-container img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+
+
+
+.blurry-load-container img.loaded {
+  opacity: 1;
+}
+
+.blurry-load-container .img-blur {
+  filter: blur(50px);
+}
